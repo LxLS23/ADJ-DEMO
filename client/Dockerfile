@@ -20,9 +20,9 @@ ARG API_PORT
 
 # Establecer las variables de entorno en base a los argumentos (Van al .env)
 
-ENV VITE_API_HOST = $API_HOST
-ENV VITE_API_BASE = $API_BASE
-ENV VITE_API_PORT = $API_PORT
+ENV VITE_API_HOST=$API_HOST
+ENV VITE_API_BASE=$API_BASE
+ENV VITE_API_PORT=$API_PORT
 
 # Funciona para generar el /dist
 RUN npm run build

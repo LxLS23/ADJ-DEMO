@@ -11,8 +11,7 @@ COPY . .
 # 1- Limpiar y compilar el jar del back
 
 # 2.- Copiar el jar resultante al dir de trabajo
-RUN mvn clean package -DskipTests && cp /target/*.jar app.jar
-
+RUN mvn clean package -DskipTests && cp target/*.jar app.jar
 #EXPONER LA IMAGEN
 EXPOSE 8081
 
